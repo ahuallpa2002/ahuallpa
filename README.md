@@ -1,2 +1,0 @@
-# ahuallpa
-Mi repositorio 

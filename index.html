@@ -2,8 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ander Huallpa | Structural Engineering Portfolio</title>
   <style>
     body {
@@ -12,90 +11,124 @@
       padding: 0;
       background-color: #f4f4f4;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    header {
-      text-align: center;
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile {
+      width: 30%;
       padding: 20px;
-      background-color: #0073e6;
-      color: white;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      background-color: #f9f9f9;
     }
-    header h1 {
-      margin: 0;
-    }
-    .profile-pic {
+    .profile img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      margin: 10px auto;
+      margin-bottom: 10px;
+    }
+    .profile h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .profile p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .profile a {
+      color: #0073e6;
+      text-decoration: none;
     }
     .content {
-      text-align: center;
-    }
-    section {
+      width: 70%;
       padding: 20px;
     }
-    h2 {
+    .content h2 {
+      text-align: center;
       color: #000080;
-      text-align: center;
     }
-    .project {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .project img {
-      width: 200px;
-      height: auto;
-      margin: 10px 0;
-    }
-    .icons img {
+    .content .icons img {
       margin: 5px;
       width: 40px;
       height: auto;
+    }
+    .content p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .project {
+      margin-bottom: 20px;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
     }
     footer {
       text-align: center;
       padding: 10px;
       background-color: #0073e6;
       color: white;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://via.placeholder.com/150" alt="Ander Huallpa" class="profile-pic">
-    <h1>Ander Huallpa</h1>
-    <p>🏗️ Structural Engineering | Automation | BIM-VDC</p>
-    <p>
-      <a href="https://www.linkedin.com/" target="_blank" style="color: white; text-decoration: underline;">LinkedIn</a>
-    </p>
-  </header>
-  <section>
-    <h2>PORTAFOLIO</h2>
-    <p>PROYECTOS DE INGENIERÍA ESTRUCTURAL</p>
-    <div class="icons">
-      <img src="https://via.placeholder.com/40" alt="Icon 1">
-      <img src="https://via.placeholder.com/40" alt="Icon 2">
-      <img src="https://via.placeholder.com/40" alt="Icon 3">
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="https://via.placeholder.com/150" alt="Ander Huallpa">
+      <h1>Ander Huallpa</h1>
+      <p>🏗️ Structural Engineering</p>
+      <p>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </p>
+      <p>Apasionado por el análisis sísmico, diseño estructural y automatización.</p>
     </div>
-    <p>
-      Una de las ventajas más significativas para los ingenieros estructurales que poseen habilidades en programación es la capacidad de optimizar tanto el tiempo como la precisión en sus diseños.
-    </p>
-    <div class="project">
-      <h3>Automatización del Análisis Sísmico</h3>
-      <p>Generación automática de memoria de cálculo para análisis sísmico utilizando Python y ETABS API.</p>
-      <img src="https://via.placeholder.com/200" alt="Automatización del análisis sísmico">
+
+    <!-- Content Section -->
+    <div class="content">
+      <h2>PORTAFOLIO</h2>
+      <p>PROYECTOS DE INGENIERÍA ESTRUCTURAL</p>
+      <div class="icons">
+        <img src="https://via.placeholder.com/40" alt="Icon 1">
+        <img src="https://via.placeholder.com/40" alt="Icon 2">
+        <img src="https://via.placeholder.com/40" alt="Icon 3">
+      </div>
+      <p>
+        La programación permite automatizar múltiples procesos, reduciendo el tiempo invertido en tareas repetitivas y aumentando la precisión.
+      </p>
+
+      <div class="project">
+        <h3>Automatización del Análisis Sísmico</h3>
+        <p>Generación automática de memoria de cálculo para análisis sísmico utilizando Python y ETABS API.</p>
+        <img src="https://via.placeholder.com/400" alt="Automatización del análisis sísmico">
+      </div>
+
+      <div class="project">
+        <h3>Modelo Paramétrico de Edificaciones</h3>
+        <p>Automatización del diseño estructural con Python para la creación de modelos paramétricos.</p>
+        <img src="https://via.placeholder.com/400" alt="Modelo paramétrico">
+      </div>
+
+      <div class="project">
+        <h3>Dinámica Estructural</h3>
+        <p>Análisis modal espectral de sistemas de múltiples grados de libertad.</p>
+        <img src="https://via.placeholder.com/400" alt="Dinámica estructural">
+      </div>
     </div>
-    <div class="project">
-      <h3>Modelo Paramétrico de Edificaciones</h3>
-      <p>Automatización del diseño estructural con Python para la creación de modelos paramétricos.</p>
-      <img src="https://via.placeholder.com/200" alt="Modelo paramétrico">
-    </div>
-    <div class="project">
-      <h3>Dinámica Estructural</h3>
-      <p>Análisis modal espectral de sistemas de múltiples grados de libertad.</p>
-      <img src="https://via.placeholder.com/200" alt="Dinámica estructural">
-    </div>
-  </section>
+  </div>
+
   <footer>
     <p>© 2024 Ander Huallpa</p>
   </footer>

@@ -1,134 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ander Huallpa | Structural Engineering Portfolio</title>
+  <title>Ander Huallpa | Structural Engineer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #fdfcfb, #f2f2f2);
       color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: transparent;
+    }
+    header a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0073e6;
+    }
+    .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .container {
-      display: flex;
-      width: 90%;
-      max-width: 1200px;
-      margin: 20px auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .profile {
-      width: 30%;
-      padding: 20px;
-      border-right: 1px solid #ddd;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      background-color: #f9f9f9;
+      padding: 20px;
     }
-    .profile img {
-      width: 150px;
-      height: 150px;
+    .hero img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      margin-bottom: 10px;
+      border: 3px solid #0073e6;
+      margin-bottom: 20px;
     }
-    .profile h1 {
-      font-size: 24px;
+    .hero h1 {
+      font-size: 48px;
       margin-bottom: 10px;
+      color: #333;
     }
-    .profile p {
-      margin: 5px 0;
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
       color: #555;
     }
-    .profile a {
-      color: #0073e6;
+    .hero .buttons {
+      display: flex;
+      gap: 15px;
+    }
+    .hero .buttons a {
+      padding: 10px 20px;
       text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s;
     }
-    .content {
-      width: 70%;
-      padding: 20px;
+    .hero .buttons .primary {
+      background-color: #0073e6;
+      color: white;
     }
-    .content h2 {
-      text-align: center;
-      color: #000080;
+    .hero .buttons .primary:hover {
+      background-color: #005bb5;
     }
-    .content .icons img {
-      margin: 5px;
-      width: 40px;
-      height: auto;
+    .hero .buttons .secondary {
+      background-color: white;
+      color: #0073e6;
+      border: 2px solid #0073e6;
     }
-    .content p {
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    .project {
-      margin-bottom: 20px;
-    }
-    .project img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px 0;
+    .hero .buttons .secondary:hover {
+      background-color: #f0f8ff;
     }
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: #0073e6;
+      padding: 20px;
+      background: #0073e6;
       color: white;
-      width: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Profile Section -->
-    <div class="profile">
-      <img src="https://via.placeholder.com/150" alt="Ander Huallpa">
-      <h1>Ander Huallpa</h1>
-      <p>🏗️ Structural Engineering</p>
-      <p>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      </p>
-      <p>Apasionado por el análisis sísmico, diseño estructural y automatización.</p>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-      <h2>PORTAFOLIO</h2>
-      <p>PROYECTOS DE INGENIERÍA ESTRUCTURAL</p>
-      <div class="icons">
-        <img src="https://via.placeholder.com/40" alt="Icon 1">
-        <img src="https://via.placeholder.com/40" alt="Icon 2">
-        <img src="https://via.placeholder.com/40" alt="Icon 3">
-      </div>
-      <p>
-        La programación permite automatizar múltiples procesos, reduciendo el tiempo invertido en tareas repetitivas y aumentando la precisión.
-      </p>
-
-      <div class="project">
-        <h3>Automatización del Análisis Sísmico</h3>
-        <p>Generación automática de memoria de cálculo para análisis sísmico utilizando Python y ETABS API.</p>
-        <img src="https://via.placeholder.com/400" alt="Automatización del análisis sísmico">
-      </div>
-
-      <div class="project">
-        <h3>Modelo Paramétrico de Edificaciones</h3>
-        <p>Automatización del diseño estructural con Python para la creación de modelos paramétricos.</p>
-        <img src="https://via.placeholder.com/400" alt="Modelo paramétrico">
-      </div>
-
-      <div class="project">
-        <h3>Dinámica Estructural</h3>
-        <p>Análisis modal espectral de sistemas de múltiples grados de libertad.</p>
-        <img src="https://via.placeholder.com/400" alt="Dinámica estructural">
-      </div>
+  <header>
+    <div class="logo">AH</div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+      <a href="#start" style="background: #0073e6; color: white; padding: 10px 20px; border-radius: 5px;">Start a Project</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+    <h1>Structural Engineer</h1>
+    <p>Over a decade of experience in designing safe and efficient structures with modern technologies.</p>
+    <div class="buttons">
+      <a href="#" class="primary">Use this Template</a>
+      <a href="#" class="secondary">Learn More</a>
     </div>
   </div>
-
   <footer>
     <p>© 2024 Ander Huallpa</p>
   </footer>

@@ -11,17 +11,17 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             color: #333;
-            background: #f4f4f4;
             display: flex;
             flex-direction: column;
             height: 100vh;
             overflow: hidden;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.9));
         }
 
         /* Header styles */
         header {
-            background: linear-gradient(to right, #0073e6, #005bb5);
-            color: white;
+            background: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+            color: #333;
             text-align: center;
             padding: 20px;
             position: sticky;
@@ -33,11 +33,13 @@
         header h1 {
             margin: 0;
             font-size: 36px;
+            font-weight: 600;
         }
 
         header p {
             margin: 5px 0 0;
             font-size: 18px;
+            font-weight: 300;
         }
 
         /* Main layout styles */
@@ -49,7 +51,7 @@
 
         /* Static left column */
         .left-column {
-            background: #ffe5e5; /* Color rojo claro */
+            background: rgba(255, 240, 240, 0.9); /* Fondo rojo claro con transparencia */
             width: 30%;
             padding: 20px;
             box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
@@ -58,7 +60,7 @@
 
         /* Scrollable right column */
         .right-column {
-            background: #e6f3ff; /* Color azul claro */
+            background: rgba(240, 248, 255, 0.9); /* Fondo azul claro con transparencia */
             width: 70%;
             padding: 20px;
             overflow-y: scroll;
@@ -70,11 +72,11 @@
             height: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
-            border: 4px solid #d9534f; /* Color borde */
+            border: 4px solid rgba(217, 83, 79, 0.7); /* Color borde con transparencia */
         }
 
         h2 {
-            color: #005bb5;
+            color: rgba(0, 91, 181, 0.8); /* Azul más tenue */
         }
 
         .btn {
@@ -82,15 +84,16 @@
             margin-top: 10px;
             padding: 10px 20px;
             border: none;
-            background: #d9534f; /* Rojo botón */
+            background: rgba(217, 83, 79, 0.8); /* Rojo botón con transparencia */
             color: white;
             border-radius: 4px;
             text-decoration: none;
             font-size: 14px;
+            transition: background 0.3s ease;
         }
 
         .btn:hover {
-            background: #c9302c;
+            background: rgba(201, 48, 44, 0.9); /* Oscurecer botón al pasar */
         }
 
         /* Projects */
@@ -108,7 +111,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: #005bb5;
+            background: rgba(0, 91, 181, 0.8); /* Azul footer */
             color: white;
             position: sticky;
             bottom: 0;
@@ -162,14 +165,6 @@
                 <li><strong>Breaking down complex problems</strong> through applying fundamental engineering principles</li>
                 <li><strong>Prioritising tasks</strong> to meet project deadlines</li>
             </ul>
-
-            <h2>Software Skills</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <!-- Icons for software -->
-                <div><a href="https://www.csiamerica.com/products/sap2000"><img src="https://getvectorlogo.com/wp-content/uploads/2019/05/sap2000-vector-logo.png" alt="SAP2000" style="width: 80px;"></a></div>
-                <div><a href="https://www.tekla.com/products/tekla-structures"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tekla_Structures_Logo.png/1200px-Tekla_Structures_Logo.png" alt="Tekla" style="width: 80px;"></a></div>
-                <div><a href="https://www.autodesk.com/products/autocad/overview"><img src="https://i.blogs.es/146975/autocad/450_1000.png" alt="AutoCAD" style="width: 80px;"></a></div>
-            </div>
 
             <h2>Proyectos Destacados</h2>
             <div class="project">

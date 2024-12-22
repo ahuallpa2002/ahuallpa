@@ -11,52 +11,28 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             color: #333;
-            background: linear-gradient(to bottom, #f9f9f9, #ececec);
-        }
-
-        /* Header styles */
-        header {
-            background: linear-gradient(to right, #0073e6, #005bb5);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-
-        /* Main layout styles */
-        .container {
+            background: #f4f4f4;
             display: flex;
-            flex-wrap: wrap;
-            margin: 20px auto;
-            width: 90%;
-            max-width: 1200px;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        .left-column,
-        .right-column {
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background: white;
-        }
-
+        /* Static left column */
         .left-column {
-            flex: 1 1 30%;
-            text-align: center;
-            margin-right: 20px;
+            background: #ffe5e5; /* Color rojo claro */
+            width: 30%;
+            padding: 20px;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
         }
 
+        /* Scrollable right column */
         .right-column {
-            flex: 1 1 65%;
+            background: #e6f3ff; /* Color azul claro */
+            width: 70%;
+            padding: 20px;
+            overflow-y: scroll;
+            height: 100vh;
         }
 
         /* Profile image */
@@ -65,13 +41,11 @@
             height: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
-            border: 4px solid #0073e6;
+            border: 4px solid #d9534f; /* Color borde */
         }
 
-        /* Section titles */
         h2 {
             color: #005bb5;
-            margin-bottom: 10px;
         }
 
         .btn {
@@ -79,7 +53,7 @@
             margin-top: 10px;
             padding: 10px 20px;
             border: none;
-            background: #0073e6;
+            background: #d9534f; /* Rojo botón */
             color: white;
             border-radius: 4px;
             text-decoration: none;
@@ -87,10 +61,10 @@
         }
 
         .btn:hover {
-            background: #005bb5;
+            background: #c9302c;
         }
 
-        /* Project cards */
+        /* Projects */
         .project {
             margin-bottom: 20px;
         }
@@ -102,213 +76,72 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .project h3 {
-            font-size: 20px;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        /* Footer styles */
         footer {
             text-align: center;
             padding: 10px;
             background: #005bb5;
             color: white;
-            margin-top: 20px;
+            position: sticky;
+            bottom: 0;
         }
     </style>
 </head>
 
-
-    
 <body>
-    <header>
-        <h1>Portfolio de Ingeniería</h1>
-        <p>👷‍♂️ Ingeniería Estructural | Gestión de Proyectos 👷‍♂️</p>
-    </header>
+    <!-- Static Left Column -->
+    <div class="left-column">
+        <img src="luffy.png" alt="Perfil" class="profile-img">
+        <h2>Ander Huallpa</h2>
+        <p>Bachiller de ingeniería Civil apasionado por el diseño estructural y la gestión de proyectos</p>
 
-    <div class="container">
-        <!-- Left Column -->
-        <div class="left-column">
-            <img src="luffy.png" alt="Perfil" class="profile-img">
-            <h2>Ander Huallpa</h2>
-            <p>Bachiller de ingeniería Civil apasionado por el diseño estructural y la gestión de proyectos</p>
-            
-            <a href="https://www.linkedin.com/in/anderhc2002/" class="btn" target="_blank" rel="noopener noreferrer">        
+        <a href="https://www.linkedin.com/in/anderhc2002/" class="btn" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 16px; height: 16px;"> LinkedIn
-            </a>
-            <a href="mailto:a.huallpa.2002@gmail.com" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" style="width: 16px; height: 16px;"> a.huallpa.2002@gmail.com
-            </a>
-            <a href="https://wa.me/51920633464" class="btn" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 16px; height: 16px;"> (+51) 920 633 464
-            </a>
-            
-
-            
-        </div>
-
-        <!-- Right Column -->
-        <div class="right-column">
-
-            <h2 style="color: #4682B4;">Work Experience</h2>
-            
-            <p><strong>09/2015 – 08/2022</strong><br>
-            Design Engineer, Planning, Structure, Visualizer at Creative Studio, Patna, India
-            </p>
-            
-            <p><strong>05/2012 – 07/2012</strong><br>
-            Visualizer, Makemyhouse (Freelance work), Indore, India
-            </p>
-
-
-            <h2 style="color: #4682B4;">Educational Qualification</h2>
-            
-            <p><strong>2017 – 2018</strong><br>
-            Programa del Diploma (PD) - International Baccalaureate
-            </p>
-            
-            <p><strong>2019 – 2024</strong><br>
-            Civil Engineering in UTEC
-            </p>            
-
-           
-            
-            <h2 style="color: #4682B4;">Structural Skills</h2>
-            <ul>
-                <li><strong>Producing Structural analysis models</strong> from architectural drawings</li>
-                <li><strong>Breaking down complex problems</strong> through applying fundamental engineering principles</li>
-                <li><strong>Prioritising tasks</strong> to meet project deadlines</li>
-            </ul>
-            
-
-
-            <h2 style="color: #4682B4;">Software Skills</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-
-
-                <!-- SAP2000 -->
-                <div style="text-align: center;">
-                    <a href="https://www.csiamerica.com/products/sap2000" target="_blank" rel="noopener noreferrer">
-                        <img src="https://getvectorlogo.com/wp-content/uploads/2019/05/sap2000-vector-logo.png" alt="SAP2000" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Tekla Structures -->
-                <div style="text-align: center;">
-                    <a href="https://www.tekla.com/products/tekla-structures" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tekla_Structures_Logo.png/1200px-Tekla_Structures_Logo.png" alt="Tekla Structures" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Advance Steel -->
-                <div style="text-align: center;">
-                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIV6wqystryqGymnEhKHi5gKdTSmi8xx6uJg&s" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.servimg.com/u/f45/18/18/55/83/as_tra10.jpg" alt="Advance Steel" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-                
-                        <!-- AutoCAD -->
-                <div style="text-align: center;">
-                    <a href="https://www.autodesk.com/products/autocad/overview" target="_blank" rel="noopener noreferrer">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8a3peHKf4Ae3vbYvqgiVfkAR0h_BqwDclWA&s" alt="AutoCAD" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Autodesk Inventor -->
-                <div style="text-align: center;">
-                    <a href="https://www.autodesk.com/products/inventor/overview" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.pinimg.com/736x/36/42/34/3642342ee32b886395a935189c208c29.jpg" alt="Autodesk Inventor" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- ANSYS -->
-                <div style="text-align: center;">
-                    <a href="https://www.ansys.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ansys_logo_%282019%29.svg/2560px-Ansys_logo_%282019%29.svg.png" alt="ANSYS" style="width: 100px; height: auto;">
-                    </a>
-                </div>
-
-
-                <!-- SAFE -->
-                <div style="text-align: center;">
-                    <a href="https://www.csiamerica.com/products/safe" target="_blank" rel="noopener noreferrer">
-                        <img src="https://downloadlynet.ir/wp-content/uploads/2021/10/CSI-SAFE-.png" alt="SAFE" style="width: 60px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Excel -->
-                <div style="text-align: center;">
-                    <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noopener noreferrer">
-                        <img src="https://e7.pngegg.com/pngimages/794/5/png-clipart-microsoft-excel-microsoft-corporation-scalable-graphics-excel-icon-angle-text.png" alt="Excel" style="width: 60px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- LaTeX -->
-                <div style="text-align: center;">
-                    <a href="https://www.latex-project.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="LaTeX" style="width: 60px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Python -->
-                <div style="text-align: center;">
-                    <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="width: 60px; height: auto;">
-                    </a>
-                </div>
-                
-                <!-- Visual Studio -->
-                <div style="text-align: center;">
-                    <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://img.icons8.com/?size=512&id=9OGIyU8hrxW5&format=png" alt="Visual Studio" style="width: 60px; height: auto;">
-                    </a>
-                </div>
-
-                <ul>
-                    <li><strong>SAP2000</strong>: Used on various projects involving design & analysis of steel-framed structures</li>
-                    <li><strong>AutoCAD</strong>: Used to draft 2D and 3D engineering drawings</li>
-                    <li><strong>Strand 7</strong>: Used to analyze steel & concrete elements</li>
-                    <li><strong>ANSYS</strong>: Conducted fatigue finite element analysis of timber during thesis</li>
-                    <li><strong>Microsoft Office Suite</strong>: Comprehensive understanding</li>
-                </ul>
-                
-            </div>
-
-
-
-
-            
-            
-            <h2>Proyectos Destacados</h2>
-            
-            <div class="project">
-                <h3>Modelado de Oreja para Izaje</h3>
-                <p>Modelado de una oreja para izaje en Autodesk Inventor y Ansys Workbench</p>
-                <img src="Oreja_Izaje_Inventor.png" alt="Proyecto 1" style="transform: scale(0.8);">
-            
-            <div class="project">
-                <h3>Modelado de Estructura para Mensula de polipasto</h3>
-                <p>Modelado de una estructura metalica en SAP2000 que soporta una carga de mensula</p>
-                <img src="Plataforma_Mensula_SAP2000.png" alt="Proyecto 2" style="transform: scale(0.7);">
-            
-            <div class="project">
-                <h3>Modelado de Cesta</h3>
-                <p>Modelado de una Cesta en Autodesk Inventor y Ansys Workbench</p>
-                <img src="Cesta_Inventor.png" alt="Proyecto 3" style="transform: scale(0.8);"">
-            
-            <div class="project">
-                <h3>Modelado de Puente Peatonal</h3>
-                <p>Modelado de un puente Peatonal en SAP2000 y Advance Steel</p>
-                <img src="Puente_Peatonal_SAP2000.png" alt="Proyecto 4" style="transform: scale(0.9);"">
-            
-            </div>
-        </div>
+        </a>
+        <a href="mailto:a.huallpa.2002@gmail.com" class="btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" style="width: 16px; height: 16px;"> Gmail
+        </a>
+        <a href="https://wa.me/51920633464" class="btn" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 16px; height: 16px;"> WhatsApp
+        </a>
     </div>
 
-    <footer>
-        © 2024 Ander Huallpa
-    </footer>
+    <!-- Scrollable Right Column -->
+    <div class="right-column">
+        <h2>Work Experience</h2>
+        <p><strong>09/2015 – 08/2022</strong><br>
+            Design Engineer, Planning, Structure, Visualizer at Creative Studio, Patna, India
+        </p>
+        <p><strong>05/2012 – 07/2012</strong><br>
+            Visualizer, Makemyhouse (Freelance work), Indore, India
+        </p>
+
+        <h2>Educational Qualification</h2>
+        <p><strong>2017 – 2018</strong><br> Programa del Diploma (PD) - International Baccalaureate</p>
+        <p><strong>2019 – 2024</strong><br> Civil Engineering in UTEC</p>
+
+        <h2>Structural Skills</h2>
+        <ul>
+            <li><strong>Producing Structural analysis models</strong> from architectural drawings</li>
+            <li><strong>Breaking down complex problems</strong> through applying fundamental engineering principles</li>
+            <li><strong>Prioritising tasks</strong> to meet project deadlines</li>
+        </ul>
+
+        <h2>Software Skills</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <!-- Icons for software -->
+            <div><a href="https://www.csiamerica.com/products/sap2000"><img src="https://getvectorlogo.com/wp-content/uploads/2019/05/sap2000-vector-logo.png" alt="SAP2000" style="width: 80px;"></a></div>
+            <div><a href="https://www.tekla.com/products/tekla-structures"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tekla_Structures_Logo.png/1200px-Tekla_Structures_Logo.png" alt="Tekla" style="width: 80px;"></a></div>
+            <div><a href="https://www.autodesk.com/products/autocad/overview"><img src="https://i.blogs.es/146975/autocad/450_1000.png" alt="AutoCAD" style="width: 80px;"></a></div>
+        </div>
+
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+            <h3>Modelado de Oreja para Izaje</h3>
+            <p>Modelado de una oreja para izaje en Autodesk Inventor y Ansys Workbench</p>
+            <img src="Oreja_Izaje_Inventor.png" alt="Proyecto 1">
+        </div>
+        <footer>© 2024 Ander Huallpa</footer>
+    </div>
 </body>
 
 </html>
